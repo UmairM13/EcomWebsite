@@ -1,0 +1,44 @@
+{
+    "name": "cookbookcompass",
+    "version": "1.0.0",
+    "description": "The Eventitude API for the 24/25 Full Stack Web Development assignment",
+    "main": "server.js",
+    "scripts": {
+        "wipe": "mocha ./tests/database.refresh.js --reporter spec --log-level=warn --timeout 10000",
+        "dev": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/UmairM13/CookbookCompass.git"
+    },
+    "keywords": [
+        "cookbook",
+        "api",
+        "recipe",
+        "bmi",
+        "health",
+        "full",
+        "stack",
+        "web"
+    ],
+    "author": "Umair Mangera",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/UmairM13/CookbookCompass/issues"
+    },
+    "homepage": "https://github.com/UmairM13/CookbookCompass#readme",
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "chai": "^4.3.8",
+        "chai-http": "^4.4.0",
+        "cors": "^2.8.5",
+        "crypto": "^1.0.1",
+        "express": "^4.21.1",
+        "joi": "^17.13.3",
+        "mocha": "^10.2.0",
+        "morgan": "^1.10.0",
+        "nodemon": "^3.0.1",
+        "sqlite3": "^5.1.6",
+        "ws": "^8.18.0"
+    }
+}
