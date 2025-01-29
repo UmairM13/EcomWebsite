@@ -2,15 +2,12 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const net = require("net");
-const WebSocket = require("ws");
 
 const app = express();
 app.use(cors());
 
 // Server port
 const HTTP_PORT = 3333;
-const TCP_PORT = 8080;
 
 // Logging
 app.use(morgan("tiny"));
