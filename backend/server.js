@@ -23,8 +23,6 @@ app.get("/", (req, res, next) => {
 
 // Other API endpoints: Links go here...
 require("./app/routes/user.server.routes.js")(app);
-require("./app/routes/food.server.routes.js")(app);
-require("./app/routes/bmi.server.routes")(app);
 
 // Create HTTP server
 const server = app.listen(HTTP_PORT, () => {
